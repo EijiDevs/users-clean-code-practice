@@ -1,6 +1,6 @@
 package infraestructure.datasource;
 
-import domain.models.users.User;
+import domain.users.models.User;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,7 +1,7 @@
 package infraestructure.persistence.users;
 
-import domain.models.users.User;
-import domain.models.users.UserRepository;
+import domain.users.models.User;
+import domain.users.ports.UserRepository;
 import infraestructure.datasource.InMemoryUserStorage;
 
 import java.util.List;

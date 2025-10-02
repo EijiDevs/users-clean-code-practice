@@ -1,7 +1,7 @@
 package application.usecases.users.get;
 
-import domain.models.users.User;
-import domain.models.users.UserRepository;
+import domain.users.models.User;
+import domain.users.ports.UserRepository;
 
 import java.util.Optional;
 
