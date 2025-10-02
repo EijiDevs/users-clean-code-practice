@@ -7,7 +7,8 @@ import java.util.Optional;
 
 /**
  * @author Esteban Perafan
- * @version 0.1.0
+ * @version 1.0
+ * @since 0.1.0
  */
 final public class GetUserById {
     private final UserRepository repository;

@@ -2,6 +2,12 @@ package domain.models.users;
 
 import java.util.Date;
 
+/**
+ * User Domain Model, don't touch it unless you know what you do
+ * @author Esteban Perafan
+ * @version 1.0
+ * @since 0.1.0
+ */
 final public class User {
     private String id;
     private String username;
