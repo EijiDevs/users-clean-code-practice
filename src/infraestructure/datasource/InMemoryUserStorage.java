@@ -9,7 +9,7 @@ import java.util.Map;
 
 
 /**
- * Singleton in memory storage to proofs without real infraestructure behind
+ * Singleton in memory storage to proofs without real infrastructure behind
  * This class emulate an SQL Database
  * @author Esteban Perafan
  * @version 1.0
