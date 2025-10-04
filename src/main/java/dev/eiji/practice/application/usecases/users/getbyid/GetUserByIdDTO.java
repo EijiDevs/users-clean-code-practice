@@ -1,4 +1,4 @@
-package dev.eiji.practice.application.usecases.users.get;
+package dev.eiji.practice.application.usecases.users.getbyid;
 
 import java.util.Date;
 
