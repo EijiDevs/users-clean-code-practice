@@ -1,4 +1,4 @@
-package dev.eiji.practice.application.usecases.users.getbyid;
+package dev.eiji.practice.application.usecases.users.get;
 
 import java.util.Date;
 
@@ -12,4 +12,4 @@ import java.util.Date;
  * @param email
  * @param birthDay
  */
-public record GetUserByIdDTO(String id, String username, String prettyName, String email, Date birthDay) {}
+public record GetUserDTO(String id, String username, String prettyName, String email, Date birthDay) {}

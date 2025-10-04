@@ -1,5 +1,6 @@
 package dev.eiji.practice.application.usecases.users.getbyid;
 
+import dev.eiji.practice.application.usecases.users.get.GetUserDTO;
 import dev.eiji.practice.domain.users.models.User;
 import dev.eiji.practice.domain.users.ports.UserRepository;
 
@@ -17,14 +18,14 @@ final public class GetUserById {
         this.repository = repository;
     }
 
-    public GetUserByIdDTO get(String id) throws Exception {
+    public GetUserDTO get(String id) throws Exception {
         Optional<User> optionalUser = repository.findById(id);
 
         if (optionalUser.isEmpty()) throw new Exception("User doesn't exist.");
 
         User user = optionalUser.get();
 
-        return new GetUserByIdDTO(
+        return new GetUserDTO(
                 user.getId(),
                 user.getUsername(),
                 user.getPrettyName(),
