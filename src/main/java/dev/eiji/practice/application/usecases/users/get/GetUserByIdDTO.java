@@ -1,4 +1,4 @@
-package application.usecases.users.get;
+package dev.eiji.practice.application.usecases.users.get;
 
 import java.util.Date;
 

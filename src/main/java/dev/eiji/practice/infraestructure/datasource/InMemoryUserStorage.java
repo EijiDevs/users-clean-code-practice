@@ -1,6 +1,6 @@
-package infraestructure.datasource;
+package dev.eiji.practice.infraestructure.datasource;
 
-import domain.users.models.User;
+import dev.eiji.practice.domain.users.models.User;
 
 import java.util.ArrayList;
 import java.util.HashMap;

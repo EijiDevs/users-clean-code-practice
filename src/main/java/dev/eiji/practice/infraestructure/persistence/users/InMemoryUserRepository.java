@@ -1,8 +1,8 @@
-package infraestructure.persistence.users;
+package dev.eiji.practice.infraestructure.persistence.users;
 
-import domain.users.models.User;
-import domain.users.ports.UserRepository;
-import infraestructure.datasource.InMemoryUserStorage;
+import dev.eiji.practice.domain.users.models.User;
+import dev.eiji.practice.domain.users.ports.UserRepository;
+import dev.eiji.practice.infraestructure.datasource.InMemoryUserStorage;
 
 import java.util.List;
 import java.util.Optional;

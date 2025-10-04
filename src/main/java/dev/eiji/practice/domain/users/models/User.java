@@ -1,4 +1,4 @@
-package domain.users.models;
+package dev.eiji.practice.domain.users.models;
 
 import java.util.Date;
 

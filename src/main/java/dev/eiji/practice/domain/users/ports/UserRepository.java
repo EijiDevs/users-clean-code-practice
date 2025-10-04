@@ -1,6 +1,6 @@
-package domain.users.ports;
+package dev.eiji.practice.domain.users.ports;
 
-import domain.users.models.User;
+import dev.eiji.practice.domain.users.models.User;
 
 import java.util.List;
 import java.util.Optional;
