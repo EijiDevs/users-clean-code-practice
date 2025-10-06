@@ -36,6 +36,10 @@ final public class InMemoryUserRepository implements UserRepository {
 
     @Override
     public void save(User user) {
+        if(storage.selectByUsername(user.getUsername()) != null) {
+            return;
+        }
+
         storage.insert(user);
     }
 
