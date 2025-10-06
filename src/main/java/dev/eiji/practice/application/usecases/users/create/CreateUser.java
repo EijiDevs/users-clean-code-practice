@@ -16,7 +16,7 @@ public class CreateUser {
         this.encryptor = encryptor;
     }
 
-    public void create(CreateUserDTO dto) {
+    public void create(CreateUserDTO dto) throws Exception {
         User user = User.create(
                 dto.username(),
                 dto.name(),
@@ -25,6 +25,11 @@ public class CreateUser {
                 encryptor.encrypt(dto.password()),
                 dto.birthDay()
         );
+
+        boolean userExistPreviously = respository.findByUsername(user.getUsername()).isPresent();
+        if (userExistPreviously) {
+            throw new Exception("This user already exist. Proof with other.");
+        }
 
         respository.save(user);
     }
