@@ -46,6 +46,6 @@ final public class InMemoryUserRepository implements UserRepository {
 
     @Override
     public void delete(User user) {
-        storage.delete(user.getId());
+        storage.delete(user.getUsername());
     }
 }
