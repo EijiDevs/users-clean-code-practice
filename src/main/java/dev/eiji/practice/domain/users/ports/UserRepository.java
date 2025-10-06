@@ -12,7 +12,7 @@ import java.util.Optional;
  * @since 0.1.0
  */
 public interface UserRepository {
-    public Optional<User> findById(String id);
+    public Optional<User> findByUsername(String username);
     public List<User> findAll();
     public void save(User user);
     public void update(User user);

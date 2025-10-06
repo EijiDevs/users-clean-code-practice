@@ -28,8 +28,8 @@ final public class InMemoryUserRepository implements UserRepository {
     }
 
     @Override
-    public Optional<User> findById(String id) {
-        var user = storage.selectById(id);
+    public Optional<User> findByUsername(String username) {
+        var user = storage.selectByUsername(username);
 
         return Optional.ofNullable(user);
     }
