@@ -1,3 +1,5 @@
 package dev.eiji.practice.application.usecases.users.create;
 
-public record CreateUserDTO() {}
+import java.util.Date;
+
+public record CreateUserDTO(String username, String name, String lastName, String email, String password, Date birthDay) {}
