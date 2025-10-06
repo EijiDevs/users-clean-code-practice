@@ -6,10 +6,9 @@ import java.util.Date;
  * @author Esteban Perafan
  * @version 1.0
  * @since 0.1.0
- * @param id user UUID identifier
  * @param username
  * @param prettyName a pretty combination of name and last name
  * @param email
  * @param birthDay
  */
-public record GetUserDTO(String id, String username, String prettyName, String email, Date birthDay) {}
+public record GetUserDTO(String username, String prettyName, String email, Date birthDay) {}

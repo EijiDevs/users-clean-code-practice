@@ -18,7 +18,6 @@ public class CreateUser {
 
     public void create(CreateUserDTO dto) {
         User user = User.create(
-                UUID.randomUUID().toString(),
                 dto.username(),
                 dto.name(),
                 dto.lastName(),

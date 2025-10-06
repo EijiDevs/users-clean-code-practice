@@ -9,7 +9,6 @@ import java.util.Date;
  * @since 0.1.0
  */
 final public class User {
-    private String id;
     private String username;
     private String name;
     private String lastName;
@@ -17,22 +16,17 @@ final public class User {
     private String password;
     private Date birthDay;
 
-    public static User create(String id, String username, String name, String lastName, String email, String password, Date birthDay) {
-        return new User(id, username, name, lastName, email, password, birthDay);
+    public static User create(String username, String name, String lastName, String email, String password, Date birthDay) {
+        return new User(username, name, lastName, email, password, birthDay);
     }
 
-    private User(String id, String username, String name, String lastName, String email, String password, Date birthDay) {
-        this.id = id;
+    private User(String username, String name, String lastName, String email, String password, Date birthDay) {
         this.username = username;
         this.name = name;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.birthDay = birthDay;
-    }
-
-    public String getId() {
-        return id;
     }
 
     public String getUsername() {
