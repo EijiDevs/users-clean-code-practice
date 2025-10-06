@@ -11,22 +11,21 @@ import java.util.Optional;
  * @version 1.0
  * @since 0.1.0
  */
-final public class GetUserById {
+final public class GetUserByUsername {
     private final UserRepository repository;
 
-    public GetUserById(UserRepository repository) {
+    public GetUserByUsername(UserRepository repository) {
         this.repository = repository;
     }
 
-    public GetUserDTO get(String id) throws Exception {
-        Optional<User> optionalUser = repository.findById(id);
+    public GetUserDTO get(String username) throws Exception {
+        Optional<User> optionalUser = repository.findByUsername(username);
 
         if (optionalUser.isEmpty()) throw new Exception("User doesn't exist.");
 
         User user = optionalUser.get();
 
         return new GetUserDTO(
-                user.getId(),
                 user.getUsername(),
                 user.getPrettyName(),
                 user.getEmail(),
